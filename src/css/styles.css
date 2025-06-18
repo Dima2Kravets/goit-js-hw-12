@@ -40,9 +40,7 @@ button {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 28px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,8 +80,6 @@ input:hover {
 button {
     border-radius: 8px;
     padding: 8px 16px;
-    width: 91px;
-    height: 40px;
     background: #4e75ff;
     border: none;
     font-weight: 500; 
