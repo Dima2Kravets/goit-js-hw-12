@@ -38,7 +38,15 @@ async function handleSubmit(event) {
   showLoaderTop();
   hideLoadMoreButton();
   query = event.target.elements[0].value.trim();
-  if (!query) return;
+  console.log(query);
+  if (!query) {
+    hideLoaderTop();
+    iziToast.warning({
+      message: 'Please enter a search term.',
+      position: 'topRight',
+    });
+    return;
+  }
   try {
     const response = await getImagesByQuery(query, page);
     totalHits = response.totalHits;
