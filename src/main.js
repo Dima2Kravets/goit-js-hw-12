@@ -38,7 +38,6 @@ async function handleSubmit(event) {
   showLoaderTop();
   hideLoadMoreButton();
   query = event.target.elements[0].value.trim();
-  console.log(query);
   if (!query) {
     hideLoaderTop();
     iziToast.warning({
